@@ -262,11 +262,10 @@
       margin:0;
     }
 
-  .project-grid{
+ .project-grid{
   display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:28px;
-  align-items:start;
+  grid-template-columns:repeat(3, 1fr);
+  gap:22px;
 }
 
     .project{
@@ -457,6 +456,15 @@ color:#fffaf2;
   .project-grid,
   .gallery-grid{grid-template-columns:1fr;}
 }
+    .film-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:28px;
+  align-items:start;
+}
+    .film-grid{
+  grid-template-columns:1fr;
+}
 
       .portrait-card{min-height:360px;}
 
@@ -537,7 +545,7 @@ color:#fffaf2;
           <p class="section-copy">Stories of music, survival, reinvention, and people discovering who they really are when the world pushes back.</p>
         </div>
 
-        <div class="project-grid">
+        <div class="film-grid">
           <article class="project featured">
             <div class="project-img">
               <span>Flagship Screenplay</span>
