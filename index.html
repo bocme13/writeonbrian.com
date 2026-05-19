@@ -452,30 +452,46 @@ color:#fffaf2;
 
     footer a{color:var(--accent-dark); font-weight:bold;}
 
-    @media (max-width:650px){
-  .project-grid,
-  .gallery-grid{grid-template-columns:1fr;}
-}
-    .film-grid{
+   .film-grid{
   display:grid;
   grid-template-columns:repeat(2, minmax(0, 1fr));
   gap:28px;
   align-items:start;
 }
-    .film-grid{
-  grid-template-columns:1fr;
+
+@media (max-width:650px){
+  .hero-grid,
+  .about-card{
+    grid-template-columns:1fr;
+  }
+
+  .portrait-card{
+    min-height:360px;
+  }
+
+  .project-grid,
+  .film-grid,
+  .gallery-grid,
+  .laurels{
+    grid-template-columns:1fr;
+  }
+
+  .project.featured{
+    grid-column:span 1;
+  }
+
+  .section-head{
+    display:block;
+  }
+
+  .section-copy{
+    margin-top:14px;
+  }
+
+  .links{
+    display:none;
+  }
 }
-
-      .portrait-card{min-height:360px;}
-
-      .project-grid,
-      .gallery-grid{grid-template-columns:1fr;}
-      .project.featured{grid-column:span 1;}
-      .laurels{grid-template-columns:1fr;}
-      .section-head{display:block;}
-      .section-copy{margin-top:14px;}
-      .links{display:none;}
-    }
   </style>
 </head>
 
@@ -545,7 +561,7 @@ color:#fffaf2;
           <p class="section-copy">Stories of music, survival, reinvention, and people discovering who they really are when the world pushes back.</p>
         </div>
 
-        <div class="film-grid">
+        <div class="project-grid">
           <article class="project featured">
             <div class="project-img">
               <span>Flagship Screenplay</span>
