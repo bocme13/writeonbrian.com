@@ -263,10 +263,11 @@
     }
 
     .project-grid{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:22px;
-    }
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:28px;
+  align-items:start;
+}
 
     .project{
       background:var(--paper);
