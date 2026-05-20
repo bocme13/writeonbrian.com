@@ -319,16 +319,18 @@ padding:22px;
 color:#fffaf2;
     }
 
-    .project-img span{
-      text-transform:uppercase;
-      letter-spacing:.14em;
-      font-size:.75rem;
-      opacity:.9;
-    }
+ .project-img{
+  height:auto !important;
+  overflow:hidden;
+  background:transparent;
+  display:block;
+}
+
+.project-img img,
 .project-poster{
   width:100%;
-  height:260px;
-  object-fit:cover;
+  height:auto !important;
+  object-fit:contain !important;
   display:block;
 }
     .project-body{
