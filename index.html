@@ -269,16 +269,17 @@
 }
 
     .project{
-      background:var(--paper);
-      border:1px solid var(--line);
-      border-radius:28px;
-      overflow:hidden;
-      box-shadow:0 14px 38px rgba(43,33,24,.08);
-      display:flex;
-      flex-direction:column;
-      min-height:auto;
-      align-self:start;
-    }
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 14px 38px rgba(43,33,24,.08);
+  display:flex;
+  flex-direction:column;
+  min-height:auto;
+  align-self:start;
+  align-items:flex-start;
+}
 
     .project.featured{
       grid-column:span 2;
@@ -329,9 +330,11 @@ color:#fffaf2;
 .project-img img,
 .project-poster{
   width:100%;
+  max-width:220px;
   height:auto !important;
   object-fit:contain !important;
   display:block;
+  margin:0 auto;
 }
     .project-body{
       padding:24px;
