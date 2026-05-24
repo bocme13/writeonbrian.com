@@ -667,22 +667,19 @@ color:#fffaf2;
 }
 
 @media(max-width:800px){
-  .gallery-grid{
+
+  .gallery-grid,
+  .photo-gallery{
     grid-template-columns:1fr;
   }
 
-  .gallery-grid img{
+  .gallery-grid img,
+  .photo-gallery img{
     height:auto;
-  }
-}
-
-  .portrait-card{
-    min-height:360px;
   }
 
   .project-grid,
   .film-grid,
-  .gallery-grid,
   .laurels{
     grid-template-columns:1fr;
   }
@@ -690,8 +687,13 @@ color:#fffaf2;
   .project.featured{
     grid-column:span 1;
   }
+}
 
-  .section-head{
+  .portrait-card{
+    min-height:360px;
+  }
+
+   .section-head{
     display:block;
   }
 
