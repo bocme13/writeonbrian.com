@@ -278,8 +278,7 @@
   flex-direction:column;
   min-height:auto;
   align-self:start;
-  align-items:flex-start;
-}
+  }
 
     .project.featured{
       grid-column:span 2;
@@ -293,11 +292,12 @@
   padding:0;
 }
 
+.project-img img,
 .project-poster{
   width:100%;
-  height:440px;
+  height:auto !important;
+  object-fit:contain !important;
   display:block;
-  object-fit:contain;
 }
 
     .project-img.thread{
