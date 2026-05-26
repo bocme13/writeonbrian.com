@@ -432,7 +432,6 @@ color:#fffaf2;
 }
 
 .gallery-image{
-  min-height:210px;
   background:linear-gradient(145deg, #d7dde2, #f3f5f6);
   display:flex;
   align-items:center;
@@ -468,7 +467,8 @@ color:#fffaf2;
 
 .photo-gallery img{
   width:100%;
-  object-fit:cover;
+  height:auto;
+  object-fit:contain;
   border-radius:20px;
   box-shadow:0 12px 30px rgba(43,33,24,.10);
   display:block;
