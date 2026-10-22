@@ -552,27 +552,31 @@ color:#fffaf2;
   display:block;
   margin:0 auto;
 }
-     .award-badge{
+.award-badge{
   margin-top:14px;
   width:100%;
   text-align:center !important;
 }
 
-.award-badge{
-  margin-top:14px;
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:18px;
+.award-badge {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 850px;
 }
 
-.award-badge img{
-  max-width:180px;
-  width:40%;
-  height:auto;
-  display:block;
-  margin:0 !important;
+.award-badge img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
 }
     .photo-credit-inline{
   margin:2px 18px 0 0 !important;
