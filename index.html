@@ -577,6 +577,19 @@ color:#fffaf2;
   display: block;
   margin: 0 auto;
 }
+    /* Center laurels when there are fewer than four */
+.award-badge:has(img:nth-child(1):nth-last-child(1)),
+.award-badge:has(img:nth-child(2):last-child),
+.award-badge:has(img:nth-child(3):last-child) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.award-badge:has(img:nth-child(-n+3):last-child) img {
+  width: 150px;
+  max-width: 100%;
 }
     .photo-credit-inline{
   margin:2px 18px 0 0 !important;
